@@ -2,13 +2,14 @@
   <img alt="Logo Letmeask" src="./src/assets/images/logo.svg">
 </p>
 
-<h4 align="center">
+<h3 align="center">
     🚧  Letmeask Em Construção  🚧 🚀
-<br>
+</h3>
+<h3 align="center">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WilliamGrohe/LetMeAsk?style=plastic">
     <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/WilliamGrohe/LetMeAsk?style=plastic">
     <a href="https://github.com/WilliamGrohe/LetMeAsk"><img alt="GitHub license" src="https://img.shields.io/github/license/WilliamGrohe/LetMeAsk?style=plastic"></a>
-</h4>
+</h3>
 
 <h2 align="center">
     <img alt="Letmeask Imagem de Capa" title="Letmeask Imagem de Capa" src="./src/assets/images/cover.svg" />
