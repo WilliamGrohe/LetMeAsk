@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+<p align="center">
+  <img alt="Logo Letmeask" src="./src/assets/images/logo.svg">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center">
+    🚧  Letmeask Em Construção  🚧 🚀
+<br>
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WilliamGrohe/LetMeAsk?style=plastic">
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/WilliamGrohe/LetMeAsk?style=plastic">
+    <a href="https://github.com/WilliamGrohe/LetMeAsk"><img alt="GitHub license" src="https://img.shields.io/github/license/WilliamGrohe/LetMeAsk?style=plastic"></a>
+</h4>
 
-## Available Scripts
+<h2 align="center">
+    <img alt="Letmeask Imagem de Capa" title="Letmeask Imagem de Capa" src="./src/assets/images/cover.svg" />
+</h2>
 
-In the project directory, you can run:
+<br>
 
-### `yarn start`
+# LetmeAsk
+<br>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Sobre o projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Nesta edição do Next Level Week, iremos desenvolver uma aplicação para que o usuário possa fazer perguntas a outros usuários e assim receber uma resposta da comunidade, chamada Letmeask.
 
-### `yarn test`
+Projeto desenvolvido durante a ***6ª edição** do* **NLW - Next Level Week** oferecida pela [Rocketseat](https://blog.rocketseat.com.br/primeira-next-level-week/).
+O NLW é uma experiência online com muito código, conteúdo prático, desafios, hacks, networking e um único objetivo:
+Avançar para o próximo nível.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## 🛠 Tecnologias
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Este projeto foi desenvolvido utilizando:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [React](https://reactjs.org) 
+- [Firebase](https://firebase.google.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Como executar o projeto
 
-### `yarn eject`
+### Requisitos
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Você precisa instalar [Node.js](https://nodejs.org/en/download/) e [Yarn](https://yarnpkg.com/) para executar este projeto.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Clone o projeto e acesse a pasta:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+$ git clone https://github.com/WilliamGrohe/LetMeAsk.git
+$ cd letmeask
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Siga os passos abaixo:**
+```bash
+# Install the dependencies
+$ yarn install
 
-## Learn More
+# Start the project
+$ yarn start
+```
+O aplicativo estará disponível em `http://localhost:3000`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎨 Layout
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Você pode ver o layout do projeto através do [Figma](http://figma.com/):
+
+- [Layout Web](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask/duplicate) 
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+---
+
+<p align="center">Made with ❤️ by William Grohe.</p>
