@@ -10,24 +10,20 @@
 </p>
 
 <h3 align="center">
-    🚧  Letmeask Em Construção  🚧 🚀
-</h3>
-<h3 align="center">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WilliamGrohe/LetMeAsk?style=plastic">
     <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/WilliamGrohe/LetMeAsk?style=plastic">
     <a href="https://github.com/WilliamGrohe/LetMeAsk"><img alt="GitHub license" src="https://img.shields.io/github/license/WilliamGrohe/LetMeAsk?style=plastic"></a>
     <img alt="GitHub license" src="https://img.shields.io/badge/Version%20v1.0-Complete-success?style=plastic&logo=">
-    <a href="#-versao-2.0"><img alt="GitHub license" src="https://img.shields.io/badge/Version%20v2.0-Construction-important?style=plastic&logo=React"></a>
+    <a href="#versao-2.0"><img alt="GitHub license" src="https://img.shields.io/badge/Version%20v2.0-Construction-important?style=plastic&logo=React"></a>
 </h3>
 
 <h2 align="center">
     <img alt="Letmeask Imagem de Capa" title="Letmeask Imagem de Capa" src="./src/assets/images/cover.svg" />
 </h2>
-
 <br>
 
 # LetmeAsk
-<br>
+
 <br>
 
 ## 💻 Sobre o projeto
@@ -40,6 +36,9 @@ Projeto desenvolvido durante a ***6ª edição** do* **NLW - Next Level Week** o
 O NLW é uma experiência online com muito código, conteúdo prático, desafios, hacks, networking e um único objetivo:
 Avançar para o próximo nível.
 
+<h3><a href="https://letmeask-49aa6.web.app" target="_blank">🌎 Experimente online aqui</a></h3>
+
+<br>
 
 ## 🛠 Tecnologias
 
@@ -50,6 +49,8 @@ Este projeto foi desenvolvido utilizando:
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## 🚀 Como executar o projeto
+
+Você pode acessar a aplicação online <a href="https://letmeask-49aa6.web.app" target="_blank">hospedada aqui</a>, ou seguir os passos abaixo:
 
 ### Requisitos
 
