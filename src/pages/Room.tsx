@@ -2,12 +2,17 @@ import { FormEvent, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 import logoImg from '../assets/images/logo.svg'
+import darkLogoImg from '../assets/images/dark-theme/Dark-Logo.svg'
 
+import { ToggleThemeButton } from '../components/ToggleThemeButton'
 import { Button } from '../components/Button'
 import { Question } from '../components/Question'
 import { RoomCode } from '../components/RoomCode'
+
 import { useAuth } from '../hooks/useAuth'
 import { useRoom } from '../hooks/useRoom'
+import { useTheme } from '../hooks/useTheme'
+
 import { database } from '../services/firebase'
 
 import '../styles/room.scss'
@@ -18,6 +23,8 @@ type RoomParams = {
 
 export function Room(){
     const { user } = useAuth();
+    const theme = useTheme();
+
     const params = useParams<RoomParams>();
     const [newQuestion, setNewQuestion] = useState('');
     const roomId = params.id;
@@ -62,20 +69,24 @@ export function Room(){
     }
 
     return (
-        <div id="page-room">
+        <div id="page-room" className={theme.theme}>
             <header>
                 <div className="content">
-                    <img src={logoImg} alt="Logo Letmeask"/>
+                <img src={theme.theme === 'light' ?
+                        logoImg : darkLogoImg} 
+                     alt="Letmeask" 
+                />
+                    <ToggleThemeButton ></ToggleThemeButton>
                     <RoomCode code={roomId} />
                 </div>
             </header>
-            <main>
-                <div className="room-title">
+            <main className={theme.theme}>
+                <div className={`room-title ${theme.theme}`}>
                     <h1>Sala {title}</h1>
                     {questions.length > 0 && <span>{questions.length} perguntas</span> }
                 </div>
 
-                <form onSubmit={handleNewQuestion}>
+                <form onSubmit={handleNewQuestion} className={theme.theme}>
                     <textarea 
                         placeholder="O que você quer perguntar?"
                         onChange={event => setNewQuestion(event.target.value)}

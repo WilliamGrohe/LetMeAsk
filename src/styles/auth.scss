@@ -1,13 +1,42 @@
+:root {
+    --primary: #835afd;
+    --ice: #FFF;
+}
+
+.dark {
+    --primary: #27e8a7;
+    --primary-hover: #32ae85;
+    --darker: #232937;
+    --dark-one: #506477;
+    --dark-two: #7390AA;
+    --ice: #E4F0FB;
+    --ice-two: #ADD7FF;
+    --danger: #DF4576;
+    --danger-two: #E73F5D;
+    --grey: #DBDCDD;
+}
+
 #page-auth {
     display: flex;
     align-items: stretch;
     height: 100vh;
+    
 
+    &.dark{
+        aside{
+            background: var(--primary-hover);
+            color: var(--ice);
+
+            p {
+                color: var(--ice);
+            }
+        }
+    }
     aside {
         flex: 6;
 
-        background: #835afd;
-        color: #FFF;
+        background: var(--primary);
+        color: var(--ice);
 
         display: flex;
         flex-direction: column;
@@ -29,7 +58,7 @@
             font-size: 24px;
             line-height: 32px;
             margin-top: 16px;
-            color: #f8f8f8;
+            color: var(--ice);
         }
     }
 
@@ -68,7 +97,7 @@
                 border-radius: 8px;
                 padding: 0 16px;
                 background: #FFF;
-                border: 1px solid #a8a8b3;
+                border: 1px solid var(--primary);
             }
 
             button {
@@ -96,7 +125,7 @@
             border-radius: 8px;
             font-weight: 500;
             background: #ea4335;
-            color: #FFF;
+            color: var(--ice);
 
             display: flex;
             justify-content: center;
@@ -136,6 +165,68 @@
                 height: 1px;
                 background: #a8a8b3;
                 margin-left: 16px;
+            }
+        }
+    }
+}
+
+//DARKMODE
+
+#page-auth .dark{
+
+    .main-content{
+        form {
+            
+            input{
+                background: var(--dark-two);
+                border: 1px solid var(--ice);
+                color: var(--ice);
+            }
+
+            ::-webkit-input-placeholder {
+                color: var(--ice);
+             }
+             
+             :-moz-placeholder { /* Firefox 18- */
+                color: var(--ice);  
+             }
+             
+             ::-moz-placeholder {  /* Firefox 19+ */
+                color: var(--ice);  
+             }
+             
+             :-ms-input-placeholder {  
+                color: var(--ice);  
+             }
+        }
+
+        p {
+            color: var(--grey);
+
+            a {
+                color: var(--dark-two);
+            }
+        }
+
+        .create-room{
+            background: transparent;
+            color: var(--ice);
+            border: 1px solid var(--ice);
+
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        .separator {
+            font-size: 14px;
+            color:var(--ice);
+            &::before{
+                background: var(--ice);
+            }
+
+            &::after{
+                background: var(--ice);
             }
         }
     }

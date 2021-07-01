@@ -83,7 +83,7 @@ Você pode ver o layout do projeto através do [Figma](http://figma.com/):
 Em aprimoramento uma versão mais completa, adicionando novas funcionalidades, opções de tema dark/light e responsividade.
 
 - [ ] Responsividade
-- [ ] Tema dark/light
+- [ ] Tema dark/light - [Figma Preview](https://www.figma.com/file/nnh9B57iCR6m1fij9ZJpfO/Letmeask-Dark-Theme?node-id=6703%3A0)
 - [ ] Versão PWA
 
 

@@ -1,3 +1,21 @@
+:root {
+    --primary: #835afd;
+    --ice: #FFF;
+}
+
+.dark {
+    --primary: #27e8a7;
+    --primary-hover: #32ae85;
+    --darker: #232937;
+    --dark-one: #506477;
+    --dark-two: #7390AA;
+    --ice: #E4F0FB;
+    --ice-two: #ADD7FF;
+    --danger: #DF4576;
+    --danger-two: #E73F5D;
+    --grey: #DBDCDD;
+}
+
 #page-room {
     header {
         padding: 24px;
@@ -23,12 +41,14 @@
                 }
             }
         }  
-        
     }
+
+    
 
     main {
         max-width: 800px;
         margin: 0 auto;
+
 
         .room-title {
             margin: 32px 0 24px;
@@ -39,6 +59,7 @@
                 font-family: 'Poppins', sans-serif;
                 font-size: 24px;
                 color: #29292e;
+
             }
 
             span {
@@ -51,6 +72,15 @@
                 font-size: 14px;
             }
 
+            &.dark{
+                h1{
+                    color: var(--ice);
+                }
+                span {
+                    background: var(--dark-two);
+                    color: var(--ice);
+                }
+            }
         }
 
         form {
@@ -108,6 +138,56 @@
 
         .question-list{
             margin-top: 32px;
+        }
+    }
+}
+
+//DARK MODE
+#page-room.dark {
+    
+    main {
+       
+        form {
+            textarea{
+                background: var(--dark-one);
+                color: var(--ice);
+            }
+
+            ::-webkit-input-placeholder {
+                color: var(--ice);
+            }
+            
+            :-moz-placeholder { /* Firefox 18- */
+                color: var(--ice);  
+            }
+            
+            ::-moz-placeholder {  /* Firefox 19+ */
+                color: var(--ice);  
+            }
+            
+            :-ms-input-placeholder {  
+                color: var(--ice);  
+            }
+
+            .form-footer {
+                .user-info{
+                    img {
+                        background: var(--primary-hover);
+                    }
+
+                    span {
+                        color: var(--ice);
+                    }
+                }
+
+                > span {
+                    color: var(--ice-two);
+
+                    button {
+                        color: var(--primary);
+                    }
+                }
+            }
         }
     }
 }

@@ -1,9 +1,27 @@
+:root {
+    --primary: #835afd;
+    --ice: #FFF;
+}
+
+.dark {
+    --primary: #27e8a7;
+    --primary-hover: #32ae85;
+    --darker: #232937;
+    --dark-one: #506477;
+    --dark-two: #7390AA;
+    --ice: #E4F0FB;
+    --ice-two: #ADD7FF;
+    --danger: #DF4576;
+    --danger-two: #E73F5D;
+    --grey: #DBDCDD;
+}
+
 .button {
     height: 50px;
     border-radius: 8px;
     font-weight: 500;
-    background: #835afd;
-    color: #FFF;
+    background: var(--primary);
+    color: var(--ice);
     padding: 0 32px;
 
     display: flex;
@@ -19,12 +37,12 @@
     }
 
     &.outlined{
-        background: #FFF;
-        border: 1px solid #835afd;
-        color: #835afd;
+        background: var(--ice);
+        border: 1px solid var(--primary);
+        color: var(--primary);
     }
 
-    &:not(:disabled):hover{
+    &:not(:disabled):hover:not(.dark){
         filter: brightness(0.9);
     }
 
@@ -32,4 +50,14 @@
         opacity: 0.6;
         cursor: not-allowed;
     }
+
+    &.dark {
+        background:var(--primary) !important;
+        color: var(--ice);
+    }
+
+    &.dark:hover {
+        filter: brightness(0.9);
+    }
+    
 }
