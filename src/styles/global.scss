@@ -20,10 +20,11 @@
 body {
     background: #f8f8f8;
     color: #29292e; 
-
+    
     & .dark{
         background: var(--darker);
         color: var(--ice); 
+        
     }
 }
 

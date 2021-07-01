@@ -36,10 +36,15 @@
         margin-right: 10px;
     }
 
-    &.outlined{
-        background: var(--ice);
+    &.isOutlined {
+        background: #FFF;
         border: 1px solid var(--primary);
         color: var(--primary);
+        &.dark{
+            background: transparent !important;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+        }
     }
 
     &:not(:disabled):hover:not(.dark){

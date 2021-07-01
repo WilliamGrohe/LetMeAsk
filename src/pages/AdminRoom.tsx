@@ -1,16 +1,20 @@
 import { useHistory, useParams } from 'react-router-dom'
 
 import logoImg from '../assets/images/logo.svg'
+import darkLogoImg from '../assets/images/dark-theme/Dark-Logo.svg'
 import deleteImg from '../assets/images/delete.svg'
 import checkImg from '../assets/images/check.svg'
 import answerImg from '../assets/images/answer.svg'
 
+import { ToggleThemeButton } from '../components/ToggleThemeButton'
 import { Button } from '../components/Button'
 import { Question } from '../components/Question'
 import { RoomCode } from '../components/RoomCode'
 
 // import { useAuth } from '../hooks/useAuth'
 import { useRoom } from '../hooks/useRoom'
+import { useTheme } from '../hooks/useTheme'
+
 import { database } from '../services/firebase'
 
 import '../styles/room.scss'
@@ -22,6 +26,8 @@ type RoomParams = {
 export function AdminRoom(){
     // const { user } = useAuth();
     const history = useHistory()
+    const theme = useTheme();
+
     const params = useParams<RoomParams>();
     const roomId = params.id;
 
@@ -54,13 +60,17 @@ export function AdminRoom(){
     }
 
     return (
-        <div id="page-room">
+        <div id="page-room" className={theme.theme}>
             <header>
                 <div className="content">
-                    <img src={logoImg} alt="Logo Letmeask"/>
+                    <img src={theme.theme === 'light' ?
+                            logoImg : darkLogoImg} 
+                        alt="Letmeask" 
+                    />
                     <div>
+                    <ToggleThemeButton ></ToggleThemeButton>
                         <RoomCode code={roomId} />
-                        <Button isOutlined onClick={handleEndRoom}>Encerrar sala</Button>
+                        <Button onClick={handleEndRoom} className={`button ${theme.theme} isOutlined`}>Encerrar sala</Button>
                     </div>
                 </div>
             </header>
