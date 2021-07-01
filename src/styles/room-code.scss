@@ -27,4 +27,12 @@
         font-size: 14px;
         font-weight: 500;
     }
+
+    &.dark {
+        background: #E4F0FB;
+        border: 1px solid #27e8a7;
+        div {
+            background: #27e8a7;
+        }
+    }
 }

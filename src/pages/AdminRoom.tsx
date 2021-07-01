@@ -74,13 +74,13 @@ export function AdminRoom(){
                     </div>
                 </div>
             </header>
-            <main>
-                <div className="room-title">
+            <main className={theme.theme}>
+                <div className={`room-title ${theme.theme}`}>
                     <h1>Sala {title}</h1>
                     {questions.length > 0 && <span>{questions.length} perguntas</span> }
                 </div>
 
-                <div className="question-list">
+                <div className={`question-list ${theme.theme}`}>
                     {questions.map(question => {
                         return(
                             <Question 
@@ -95,12 +95,14 @@ export function AdminRoom(){
                                     <button
                                         type="button"
                                         onClick={() => handleCheckQuestionAsAnswered(question.id)}
+                                        className="btn-check"
                                     >
                                         <img src={checkImg} alt="Marcar como respondida"/>
                                     </button>
                                     <button
                                         type="button"
                                         onClick={() => handleHighlightQuestion(question.id)}
+                                        className="btn-highlighted"
                                     >
                                         <img src={answerImg} alt="Dar destaque à pergunta"/>
                                     </button>
@@ -109,6 +111,7 @@ export function AdminRoom(){
                                 <button
                                     type="button"
                                     onClick={() => handleDeleteQuestion(question.id)}
+                                    className="btn-delete"
                                 >
                                     <img src={deleteImg} alt="Deletar pergunta"/>
                                 </button>

@@ -16,6 +16,7 @@
     --grey: #DBDCDD;
 }
 
+
 #page-room {
     header {
         padding: 24px;
@@ -143,8 +144,8 @@
 }
 
 //DARK MODE
-body{
-    background: var(--darker) !important;
+body.dark{
+    background: var(--darker);
 }
 
 #page-room.dark {

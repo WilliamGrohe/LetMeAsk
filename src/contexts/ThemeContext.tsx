@@ -32,7 +32,8 @@ export function ThemeContextProvider(props: ThemeContextProviderProps) {
 
     return(
         <ThemeContext.Provider value={{ theme: currentTheme, toggleTheme }}>
-            {props.children}
+            
+            <body className={currentTheme}>{props.children}</body>
         </ThemeContext.Provider>
     )
 }
