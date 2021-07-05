@@ -1,4 +1,3 @@
-import { ReactNode } from 'react'
 import { useTheme } from '../hooks/useTheme';
 
 import '../styles/toggle-theme-button.scss'
@@ -10,8 +9,6 @@ export function logoImg(){
 export function ToggleThemeButton() {
     
     const { theme, toggleTheme } = useTheme();
-    
-    console.log(theme)
 
     return(
         // <button 
