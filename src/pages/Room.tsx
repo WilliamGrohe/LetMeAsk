@@ -74,8 +74,6 @@ export function Room(){
         if(!user) {
             await signInWithGoogle()
         }
-
-        history.push(`/rooms/${title}`);
     }
 
     return (
