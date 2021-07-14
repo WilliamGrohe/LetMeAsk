@@ -12,6 +12,7 @@ import { useTheme } from '../hooks/useTheme'
 import { database } from '../services/firebase'
 
 import '../styles/auth.scss'
+import { ToggleThemeButton } from '../components/ToggleThemeButton'
 
 export function NewRoom() {
     const { user } = useAuth();
@@ -50,6 +51,14 @@ export function NewRoom() {
                 <p>Tire as dúvidas de sua audiência em tempo real</p>
             </aside>
             <main className={theme.theme}>
+
+                <nav className="navTheme">
+                    <span id="btnTheme">
+                        <span id="hint" >Alterar tema</span>
+                        <ToggleThemeButton />
+                    </span>
+                </nav>
+
                 <div className="main-content">
                     <img src={theme.theme === 'light' ?
                             logoImg : darkLogoImg} 

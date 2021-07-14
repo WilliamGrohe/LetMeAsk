@@ -143,6 +143,27 @@
     }
 }
 
+.navTheme{
+   
+
+    #btnTheme{
+     display: inline-flex;
+    }
+
+    #hint{
+        font-size: 14px;
+        margin: 10px 5px;
+        display: none;
+    }
+
+    #btnTheme:hover{
+         #hint{
+             display: inline-block;
+         }
+     }
+
+ }
+
 //DARK MODE
 body.dark{
     background: var(--darker);

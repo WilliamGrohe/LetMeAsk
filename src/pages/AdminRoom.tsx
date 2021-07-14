@@ -68,7 +68,12 @@ export function AdminRoom(){
                         alt="Letmeask" 
                     />
                     <div>
-                    <ToggleThemeButton ></ToggleThemeButton>
+                        <nav className="navTheme">
+                            <span id="btnTheme">
+                                <span id="hint" >Alterar tema</span>
+                                <ToggleThemeButton />
+                            </span>
+                        </nav>
                         <RoomCode code={roomId} />
                         <Button onClick={handleEndRoom} className={`button ${theme.theme} isOutlined`}>Encerrar sala</Button>
                     </div>

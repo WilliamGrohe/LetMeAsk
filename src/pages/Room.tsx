@@ -79,12 +79,19 @@ export function Room(){
         <div id="page-room" className={theme.theme}>
             <header>
                 <div className="content">
-                <img src={theme.theme === 'light' ?
-                        logoImg : darkLogoImg} 
-                     alt="Letmeask" 
-                />
-                    <ToggleThemeButton ></ToggleThemeButton>
-                    <RoomCode code={roomId} />
+                    <img src={theme.theme === 'light' ?
+                            logoImg : darkLogoImg} 
+                        alt="Letmeask" 
+                    />
+                    <div>
+                        <nav className="navTheme">
+                            <span id="btnTheme">
+                                <span id="hint" >Alterar tema</span>
+                                <ToggleThemeButton />
+                            </span>
+                        </nav>
+                        <RoomCode code={roomId} />
+                    </div>
                 </div>
             </header>
             <main className={theme.theme}>
