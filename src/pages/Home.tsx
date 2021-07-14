@@ -68,12 +68,18 @@ export function Home() {
                 <p>Tire as dúvidas de sua audiência em tempo real</p>
             </aside>
             <main className={theme.theme}>
-                <div className={`main-content`}>
+                <nav className="navTheme">
+            
+                    <span id="btnTheme">
+                        <span id="hint" >Alterar tema</span>
+                        <ToggleThemeButton />
+                    </span>
+                </nav>
+                <div className={`main-content`}>                
                     <img src={theme.theme === 'light' ?
                         logoImg : darkLogoImg} 
                         alt="Letmeask"
-                    />
-                    <ToggleThemeButton ></ToggleThemeButton>
+                    />                    
 
                     <button onClick={handleCreateRoom} className="create-room">
                         <img src={theme.theme === 'light' ?

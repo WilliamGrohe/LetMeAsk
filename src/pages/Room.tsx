@@ -1,5 +1,5 @@
 import { FormEvent, useState } from 'react'
-import { useParams, useHistory } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 
 import logoImg from '../assets/images/logo.svg'
@@ -25,7 +25,6 @@ type RoomParams = {
 export function Room(){
     const { user, signInWithGoogle } = useAuth();
     const theme = useTheme();
-    const history = useHistory();
 
     const params = useParams<RoomParams>();
     const [newQuestion, setNewQuestion] = useState('');

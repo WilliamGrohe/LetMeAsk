@@ -1,4 +1,6 @@
-import { useTheme } from '../hooks/useTheme';
+import { useTheme } from '../hooks/useTheme'
+import lampadaImg from '../assets/images/lightbulb-solid.svg'
+import lampadaBrkImg from '../assets/images/lightbulb.svg'
 
 import '../styles/toggle-theme-button.scss'
 
@@ -8,7 +10,7 @@ export function logoImg(){
 
 export function ToggleThemeButton() {
     
-    const { theme, toggleTheme } = useTheme();
+    const { toggleTheme, theme } = useTheme();
 
     return(
         // <button 
@@ -20,6 +22,10 @@ export function ToggleThemeButton() {
         //     <span>{theme}</span>
         // </button>
 
-        <button className="" onClick={toggleTheme}>Dark Theme On/Off</button>
+        <>
+        <button className="toggleThemeBtn" onClick={toggleTheme}>
+            <img src={theme === 'light' ? lampadaImg : lampadaBrkImg} />
+            </button>
+        </>
     )
 }

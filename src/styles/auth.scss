@@ -21,6 +21,31 @@
     align-items: stretch;
     height: 100vh;
     
+    .navTheme{
+       position: fixed;
+       display: flex;
+       top: 5px;
+       right: 5px;
+       width: 100%;
+       justify-content: flex-end;
+
+       #btnTheme{
+        display: inline-flex;
+       }
+
+       #hint{
+           font-size: 14px;
+           margin: 10px 5px;
+           display: none;
+       }
+
+       #btnTheme:hover{
+            #hint{
+                display: block;
+            }
+        }
+
+    }
 
     &.dark{
         aside{

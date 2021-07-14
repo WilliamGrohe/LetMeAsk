@@ -1,12 +1,6 @@
-:root {
-  --primary1: #27e8a7;
-  --primary-hover: #32ae85;
-  --darker: #232937;
-  --dark-one: #506477;
-  --dark-two: #7390AA;
-  --ice: #E4F0FB;
-  --ice-two: #ADD7FF;
-  --danger1: #DF4576;
-  --danger-two: #E73F5D;
-  --grey: #DBDCDD;
+.toggleThemeBtn {
+  background: transparent;
+  border: none;
+  width: 30px;
+  cursor: pointer;
 }
