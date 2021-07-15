@@ -37,6 +37,7 @@ O NLW é uma experiência online com muito código, conteúdo prático, desafio
 Avançar para o próximo nível.
 
 <h3><a href="https://letmeask-49aa6.web.app" target="_blank">🌎 Experimente online aqui</a></h3>
+<h3><a href="https://wg-letmeask.vercel.app/" target="_blank">🚀 Experimente V.2.0 online aqui </a></h3>
 
 <br>
 
@@ -50,7 +51,7 @@ Este projeto foi desenvolvido utilizando:
 
 ## 🚀 Como executar o projeto
 
-Você pode acessar a aplicação online <a href="https://letmeask-49aa6.web.app" target="_blank">hospedada aqui</a>, ou seguir os passos abaixo:
+Você pode acessar a aplicação online <a href="https://wg-letmeask.vercel.app/" target="_blank">hospedada aqui</a>, ou seguir os passos abaixo:
 
 ### Requisitos
 
@@ -81,9 +82,10 @@ Você pode ver o layout do projeto através do [Figma](http://figma.com/):
 
 ## 🚧 Versão 2.0
 Em aprimoramento uma versão mais completa, adicionando novas funcionalidades, opções de tema dark/light e responsividade.
+<h3><a href="https://wg-letmeask.vercel.app/" target="_blank">🌎 Experimente V.2.0 online aqui 🚀</a></h3>
 
+- [x] Tema dark/light - [Figma Preview](https://www.figma.com/file/nnh9B57iCR6m1fij9ZJpfO/Letmeask-Dark-Theme?node-id=6703%3A0)
 - [ ] Responsividade
-- [ ] Tema dark/light - [Figma Preview](https://www.figma.com/file/nnh9B57iCR6m1fij9ZJpfO/Letmeask-Dark-Theme?node-id=6703%3A0)
 - [ ] Versão PWA
 
 
